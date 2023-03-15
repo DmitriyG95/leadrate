@@ -1,0 +1,15 @@
+@function vw($value, $size: 1440) {
+    @return $value / $size * 100vw;
+}
+@function vmed($value, $size: 768) {
+    @return $value / $size * 100vw;
+}
+@function vmin($value, $size: 428) {
+    @return $value / $size * 100vw;
+}
+
+@function rem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+
